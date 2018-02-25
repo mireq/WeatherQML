@@ -66,8 +66,8 @@ Item {
 		}
 
 		Item {
-			anchors.right: currentTemperatureText.left
-			anchors.rightMargin: -scaling*30
+			anchors.horizontalCenter: parent.horizontalCenter
+			anchors.horizontalCenterOffset: -scaling * 150
 			anchors.bottom: parent.bottom
 			width: childrenRect.width
 			height: childrenRect.height
@@ -84,12 +84,13 @@ Item {
 				anchors.left: iconMin.right
 				anchors.leftMargin: scaling * 20
 				anchors.verticalCenter: iconMin.verticalCenter
+				opacity: .5
 			}
 		}
 
 		Item {
-			anchors.left: currentTemperatureText.right
-			anchors.leftMargin: -scaling*30
+			anchors.horizontalCenter: parent.horizontalCenter
+			anchors.horizontalCenterOffset: scaling * 150
 			anchors.bottom: parent.bottom
 			width: childrenRect.width
 			height: childrenRect.height
@@ -100,6 +101,7 @@ Item {
 				color: "white"
 				anchors.left: parent.left
 				anchors.verticalCenter: iconMax.verticalCenter
+				opacity: .5
 			}
 			Image {
 				id: iconMax
