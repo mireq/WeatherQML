@@ -4,8 +4,8 @@ ListModel {
 	ListElement {
 		name: "Mostly Cloudy"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: false
 		weather: "MostlyCloudy"
 	}
@@ -13,8 +13,8 @@ ListModel {
 	ListElement {
 		name: "Mostly Cloudy Night"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: true
 		weather: "MostlyCloudy"
 	}
@@ -22,8 +22,8 @@ ListModel {
 	ListElement {
 		name: "Rain"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: false
 		weather: "Rain"
 	}
@@ -31,8 +31,8 @@ ListModel {
 	ListElement {
 		name: "Rain Night"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: true
 		weather: "Rain"
 	}
@@ -40,8 +40,8 @@ ListModel {
 	ListElement {
 		name: "Heavy Snow"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: false
 		weather: "HeavySnow"
 	}
@@ -49,8 +49,8 @@ ListModel {
 	ListElement {
 		name: "Heavy Snow Night"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: true
 		weather: "HeavySnow"
 	}
@@ -58,8 +58,8 @@ ListModel {
 	ListElement {
 		name: "Thunderstorms"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: false
 		weather: "Thunderstorms"
 	}
@@ -67,8 +67,8 @@ ListModel {
 	ListElement {
 		name: "Thunderstorms Night"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: true
 		weather: "Thunderstorms"
 	}
@@ -76,8 +76,8 @@ ListModel {
 	ListElement {
 		name: "Isolated Thunderstorms"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: false
 		weather: "IsolatedThunderstorms"
 	}
@@ -85,8 +85,8 @@ ListModel {
 	ListElement {
 		name: "Isolated Thunderstorms Night"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: true
 		weather: "IsolatedThunderstorms"
 	}
@@ -94,8 +94,8 @@ ListModel {
 	ListElement {
 		name: "Clear"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: false
 		weather: "Clear"
 	}
@@ -103,8 +103,8 @@ ListModel {
 	ListElement {
 		name: "Clear Night"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: true
 		weather: "Clear"
 	}
@@ -112,8 +112,8 @@ ListModel {
 	ListElement {
 		name: "Partly Cloudy"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: false
 		weather: "PartlyCloudy"
 	}
@@ -121,8 +121,8 @@ ListModel {
 	ListElement {
 		name: "Partly Cloudy Night"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: true
 		weather: "PartlyCloudy"
 	}
@@ -130,8 +130,8 @@ ListModel {
 	ListElement {
 		name: "Cloudy"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: false
 		weather: "Cloudy"
 	}
@@ -139,8 +139,8 @@ ListModel {
 	ListElement {
 		name: "Cloudy Night"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: true
 		weather: "Cloudy"
 	}
@@ -148,8 +148,8 @@ ListModel {
 	ListElement {
 		name: "Foggy"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: false
 		weather: "Foggy"
 	}
@@ -157,8 +157,8 @@ ListModel {
 	ListElement {
 		name: "Foggy Night"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: true
 		weather: "Foggy"
 	}
@@ -166,8 +166,8 @@ ListModel {
 	ListElement {
 		name: "Rain-Snow"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: false
 		weather: "RainSnow"
 	}
@@ -175,8 +175,8 @@ ListModel {
 	ListElement {
 		name: "Rain-Snow Night"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: true
 		weather: "RainSnow"
 	}
@@ -184,8 +184,8 @@ ListModel {
 	ListElement {
 		name: "Snow"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: false
 		weather: "Snow"
 	}
@@ -193,8 +193,8 @@ ListModel {
 	ListElement {
 		name: "Snow Night"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: true
 		weather: "Snow"
 	}
@@ -202,8 +202,8 @@ ListModel {
 	ListElement {
 		name: "Windy"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: false
 		weather: "Windy"
 	}
@@ -211,8 +211,8 @@ ListModel {
 	ListElement {
 		name: "Windy Night"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: true
 		weather: "Windy"
 	}
@@ -220,8 +220,8 @@ ListModel {
 	ListElement {
 		name: "Unknown"
 		minTemperature: 20
-		currentTemperature: 30
-		maxTemperature: 25
+		currentTemperature: 25
+		maxTemperature: 30
 		isNight: true
 		weather: "Unknown"
 	}
