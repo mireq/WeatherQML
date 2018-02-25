@@ -74,6 +74,24 @@ ListModel {
 	}
 
 	ListElement {
+		name: "Foggy"
+		minTemperature: 20
+		currentTemperature: 25
+		maxTemperature: 30
+		isNight: false
+		weather: "Foggy"
+	}
+
+	ListElement {
+		name: "Foggy Night"
+		minTemperature: 20
+		currentTemperature: 25
+		maxTemperature: 30
+		isNight: true
+		weather: "Foggy"
+	}
+
+	ListElement {
 		name: "Isolated Thunderstorms"
 		minTemperature: 20
 		currentTemperature: 25
@@ -143,24 +161,6 @@ ListModel {
 		maxTemperature: 30
 		isNight: true
 		weather: "Cloudy"
-	}
-
-	ListElement {
-		name: "Foggy"
-		minTemperature: 20
-		currentTemperature: 25
-		maxTemperature: 30
-		isNight: false
-		weather: "Foggy"
-	}
-
-	ListElement {
-		name: "Foggy Night"
-		minTemperature: 20
-		currentTemperature: 25
-		maxTemperature: 30
-		isNight: true
-		weather: "Foggy"
 	}
 
 	ListElement {
