@@ -103,5 +103,6 @@
         <file>images/cloud_tstorm_3.png</file>
         <file>qml/conditions/Thunderstorms.qml</file>
         <file>qml/conditions/HeavySnow.qml</file>
+        <file>qml/conditions/elements/FadeElement.qml</file>
     </qresource>
 </RCC>

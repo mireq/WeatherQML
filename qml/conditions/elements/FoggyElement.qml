@@ -1,6 +1,6 @@
 import QtQuick 2.0
 
-Item {
+FadeElement {
 	id: group
 
 	width: 480

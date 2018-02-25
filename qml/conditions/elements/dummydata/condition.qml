@@ -5,4 +5,5 @@ QtObject {
 	property real scaling: 0.5
 	property int width: 480
 	property int height: 480
+	property string state: "down"
 }
