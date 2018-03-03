@@ -5,6 +5,7 @@ Item {
 
 	property real scaling: condition.scaling
 	property string sphereType: condition.isDay ? "sun" : "moon"
+	property int delay: 1500
 
 	width: 480
 	height: 480
@@ -15,7 +16,7 @@ Item {
 		Transition {
 			to: "down"
 			SequentialAnimation {
-				PauseAnimation { duration: 1500 }
+				PauseAnimation { duration: group.delay }
 				NumberAnimation { properties: "y"; target: translate; easing.type: Easing.OutBack; duration: 700 }
 			}
 		},

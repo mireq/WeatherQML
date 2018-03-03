@@ -10,6 +10,6 @@ ForecastView {
 
 	ConditionCanvas {
 		id: canvas
-		LightElement {}
+		LightElement { delay: 300 }
 	}
 }
