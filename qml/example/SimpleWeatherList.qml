@@ -20,6 +20,7 @@ Item {
 		snapMode: ListView.SnapOneItem
 		orientation: ListView.Horizontal
 		highlightRangeMode: ListView.StrictlyEnforceRange
+		highlightMoveDuration: 1000
 		focus: true
 	}
 }
