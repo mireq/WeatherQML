@@ -44,8 +44,8 @@ Item {
 		Hung {
 			lineOffsetX: 0.5
 			lineOffsetY: group.sphereType == "sun" ? 0.31 : 0.21
-			hungName: "../../../images/" + group.sphereType + "_line.png"
-			imageName:  "../../../images/" + group.sphereType + ".png"
+			hungName: "../../images/" + group.sphereType + "_line.png"
+			imageName:  "../../images/" + group.sphereType + ".png"
 		}
 	}
 }

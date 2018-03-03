@@ -2,8 +2,8 @@ import QtQuick 2.7
 
 Item {
 	id: item1
-	property string hungName: "../../../images/cloud_cloud_1_line.png"
-	property string imageName:  "../../../images/cloud_cloud_1.png"
+	property string hungName: "../../images/cloud_cloud_1_line.png"
+	property string imageName:  "../../images/cloud_cloud_1.png"
 	property real lineOffsetX: 0.443
 	property real lineOffsetY: 0.057
 

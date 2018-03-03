@@ -10,12 +10,12 @@ Item {
 
 			width: ListView.view.width
 			height: ListView.view.height
-			source: "conditions/" + model.weather + ".qml"
+			source: "../conditions/" + model.weather + ".qml"
 			state: "up"
 
 			onStatusChanged: {
 				if (status == Loader.Error) {
-					source = "conditions/Unknown.qml";
+					source = "../conditions/Unknown.qml";
 				}
 			}
 		}

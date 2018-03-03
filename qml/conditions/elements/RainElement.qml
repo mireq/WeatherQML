@@ -13,6 +13,6 @@ FadeElement {
 		anchors.top: parent.top
 		anchors.bottom: parent.bottom
 		anchors.topMargin: group.height * 0.4
-		source: "../../../images/rain_01.png"
+		source: "../../images/rain_01.png"
 	}
 }

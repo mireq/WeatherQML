@@ -14,6 +14,6 @@ FadeElement {
 		anchors.top: parent.top
 		anchors.bottom: parent.bottom
 		anchors.leftMargin: -0.2 * group.width
-		source: "../../../images/fog.png"
+		source: "../../images/fog.png"
 	}
 }
