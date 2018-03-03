@@ -1,4 +1,4 @@
-import QtQuick 2.9
+import QtQuick 2.0
 import QtQuick.Window 2.2
 
 Window {
@@ -11,8 +11,14 @@ Window {
 	ConditionModel {
 		id: conditionModel
 	}
+
 	MainView {
 		id: mainView
 		anchors.fill: parent
+		focus: true
+
+		Keys.onEscapePressed: {
+			window.close();
+		}
 	}
 }
