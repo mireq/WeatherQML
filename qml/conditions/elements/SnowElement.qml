@@ -12,7 +12,7 @@ FadeElement {
 	SnowFlake { variant: "02"; relativePositionY: 0.65; relativePositionX: 0.75 }
 	SnowFlake { variant: "03"; relativePositionY: 0.65; relativePositionX: 0.2 }
 	SnowFlake { variant: "04"; relativePositionY: 0.7; relativePositionX: 0.27 }
-	SnowFlake { variant: "05"; relativePositionY: 0.7; relativePositionX: 0.27 }
+	SnowFlake { variant: "05"; relativePositionY: 0.72; relativePositionX: 0.5 }
 	SnowFlake { variant: "06"; relativePositionY: 0.7; relativePositionX: 0.9 }
 	SnowFlake { variant: "07"; relativePositionY: 0.75; relativePositionX: 0.78 }
 	SnowFlake { variant: "08"; relativePositionY: 0.78; relativePositionX: 0.15 }
