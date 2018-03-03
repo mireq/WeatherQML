@@ -8,13 +8,25 @@ Item {
 	function getConditionProperties() {
 		return {
 			"state": "up",
-			"backgroundVisible": true
+			"backgroundVisible": false
+		}
+	}
+
+	Item {
+		anchors.fill: parent
+		clip: true
+		Image {
+			id: image
+			anchors.fill: parent
+			anchors.leftMargin: -0.18 * parent.width
 		}
 	}
 
 	Component {
 		id: weatherConditionDelegate
 		Item {
+			property alias item: weatherLoader.item
+
 			width: ListView.view.width
 			height: ListView.view.height
 
@@ -45,5 +57,10 @@ Item {
 		orientation: ListView.Horizontal
 		highlightRangeMode: ListView.StrictlyEnforceRange
 		focus: true
+		onCurrentItemChanged: {
+			if (currentItem) {
+				image.source = "../images/bg_" + currentItem.item.background + ".png"
+			}
+		}
 	}
 }

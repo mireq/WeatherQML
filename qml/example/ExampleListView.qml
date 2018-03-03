@@ -10,6 +10,10 @@ Item {
 			name: "Simple Condition List"
 			component: "SimpleWeatherList"
 		}
+		ListElement {
+			name: "Conditions with fade background"
+			component: "FadeBackground"
+		}
 	}
 
 	Component {
