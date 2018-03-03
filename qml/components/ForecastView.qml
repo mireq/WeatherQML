@@ -14,7 +14,7 @@ Item {
 
 	width: 480
 	height: 480
-	state: parent.state
+	state: "down"
 
 	states: [
 		State {

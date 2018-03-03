@@ -3,20 +3,32 @@ import QtQuick 2.0
 Item {
 	id: root
 
+	function getConditionProperties() {
+		return {
+			"state": "up"
+		}
+	}
+
 	Component {
 		id: weatherConditionDelegate
-		Loader {
-			id: weatherLoader
-
+		Item {
 			width: ListView.view.width
 			height: ListView.view.height
-			source: "../conditions/" + model.weather + ".qml"
-			state: "up"
 
-			onStatusChanged: {
-				if (status == Loader.Error) {
-					source = "../conditions/Unknown.qml";
+			Loader {
+				id: weatherLoader
+
+				anchors.fill: parent
+
+				onStatusChanged: {
+					if (status == Loader.Error) {
+						weatherLoader.setSource("../conditions/Unknown.qml", getConditionProperties());
+					}
 				}
+			}
+
+			Component.onCompleted: {
+				weatherLoader.setSource("../conditions/" + model.weather + ".qml", getConditionProperties());
 			}
 		}
 	}
