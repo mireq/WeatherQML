@@ -42,5 +42,6 @@ Item {
 		snapMode: ListView.SnapOneItem
 		orientation: ListView.Horizontal
 		highlightRangeMode: ListView.StrictlyEnforceRange
+		focus: true
 	}
 }
