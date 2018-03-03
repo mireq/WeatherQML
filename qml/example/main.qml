@@ -8,10 +8,6 @@ Window {
 	height: 480
 	title: qsTr("Weather")
 
-	property real scaling: Math.min(width / 960, height / 960)
-	property real baseSize: scaling * 960
-
-
 	ConditionModel {
 		id: conditionModel
 	}

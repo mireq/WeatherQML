@@ -7,6 +7,7 @@ Item {
 	property real scaling: Math.min(width / 400, height / 720)
 	property string background: isDay ? 'day_clear' : 'night_clear'
 	property bool initialized: false
+	property alias backgroundVisible: background.visible
 
 	width: 480
 	height: 480
@@ -26,6 +27,7 @@ Item {
 		clip: true
 
 		Image {
+			id: background
 			anchors.fill: parent
 			anchors.leftMargin: -0.18 * parent.width
 			source: "../images/bg_" + forecast.background + ".png"

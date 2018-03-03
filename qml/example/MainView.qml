@@ -5,7 +5,8 @@ Item {
 
 	function getConditionProperties() {
 		return {
-			"state": "up"
+			"state": "up",
+			"backgroundVisible": true
 		}
 	}
 
