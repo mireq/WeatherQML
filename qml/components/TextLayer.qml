@@ -44,50 +44,55 @@ Item {
 		}
 
 		Item {
+			id: minmax
 			anchors.horizontalCenter: parent.horizontalCenter
-			anchors.horizontalCenterOffset: -text.scaling * 150
 			anchors.bottom: parent.bottom
-			width: childrenRect.width
-			height: childrenRect.height
-			Image {
-				id: iconMin
-				source: "../images/icon_min.png"
-				width: iconMin.sourceSize.width * text.scaling
-				height: iconMin.sourceSize.height * text.scaling
-			}
-			Text {
-				text: text.minTemperature + " °C"
-				font.pixelSize: Math.max(text.scaling * 30, 8)
-				color: text.textColor
-				anchors.left: iconMin.right
-				anchors.leftMargin: text.scaling * 20
-				anchors.verticalCenter: iconMin.verticalCenter
-				opacity: .5
-			}
-		}
+			width: text.scaling * 300
 
-		Item {
-			anchors.horizontalCenter: parent.horizontalCenter
-			anchors.horizontalCenterOffset: text.scaling * 150
-			anchors.bottom: parent.bottom
-			width: childrenRect.width
-			height: childrenRect.height
-			Text {
-				id: maxTemperatureText
-				text: text.maxTemperature + " °C"
-				font.pixelSize: Math.max(text.scaling * 30, 8)
-				color: text.textColor
+			Item {
 				anchors.left: parent.left
-				anchors.verticalCenter: iconMax.verticalCenter
-				opacity: .5
+				anchors.bottom: parent.bottom
+				width: childrenRect.width
+				height: childrenRect.height
+				Image {
+					id: iconMin
+					source: "../images/icon_min.png"
+					width: iconMin.sourceSize.width * text.scaling
+					height: iconMin.sourceSize.height * text.scaling
+				}
+				Text {
+					text: text.minTemperature + " °C"
+					font.pixelSize: Math.max(text.scaling * 30, 8)
+					color: text.textColor
+					anchors.left: iconMin.right
+					anchors.leftMargin: text.scaling * 20
+					anchors.verticalCenter: iconMin.verticalCenter
+					opacity: .5
+				}
 			}
-			Image {
-				id: iconMax
-				source: "../images/icon_max.png"
-				width: iconMax.sourceSize.width * text.scaling
-				height: iconMax.sourceSize.height * text.scaling
-				anchors.left: maxTemperatureText.right
-				anchors.leftMargin: text.scaling * 20
+
+			Item {
+				anchors.right: parent.right
+				anchors.bottom: parent.bottom
+				width: childrenRect.width
+				height: childrenRect.height
+				Text {
+					id: maxTemperatureText
+					text: text.maxTemperature + " °C"
+					font.pixelSize: Math.max(text.scaling * 30, 8)
+					color: text.textColor
+					anchors.left: parent.left
+					anchors.verticalCenter: iconMax.verticalCenter
+					opacity: .5
+				}
+				Image {
+					id: iconMax
+					source: "../images/icon_max.png"
+					width: iconMax.sourceSize.width * text.scaling
+					height: iconMax.sourceSize.height * text.scaling
+					anchors.left: maxTemperatureText.right
+					anchors.leftMargin: text.scaling * 20
+				}
 			}
 		}
 	}
