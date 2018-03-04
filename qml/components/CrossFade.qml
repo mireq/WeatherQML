@@ -69,7 +69,7 @@ Item {
 
 	function garbageCollect() {
 		var item = fade.items[0];
-		while (fade.items.length > 1 && item.state === "visible" && item.animating === false) {
+		if (fade.items.length > 1 && item.state === "visible" && item.animating === false) {
 			fade.items.shift();
 			item.destroy();
 			item = fade.items[0];

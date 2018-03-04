@@ -46,4 +46,22 @@ Item {
 			}
 		}
 	}
+
+	Image {
+		id: info
+		source: "../images/info.png"
+		fillMode: Image.PreserveAspectFit
+		width: parent.width / 10
+		height: parent.width / 10
+		anchors.right: parent.right
+		anchors.top: parent.top
+		anchors.margins: parent.height / 20
+		MouseArea {
+			id: infoButton
+			anchors.fill: parent
+			acceptedButtons: Qt.LeftButton
+			onClicked: {
+			}
+		}
+	}
 }
