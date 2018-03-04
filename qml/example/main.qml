@@ -24,6 +24,8 @@ Window {
 				PropertyChanges { target: listView; focus: true }
 				PropertyChanges { target: back; opacity: 0 }
 				PropertyChanges { target: backButton; enabled: false }
+				PropertyChanges { target: info; opacity: 0 }
+				PropertyChanges { target: infoButton; enabled: false }
 			},
 			State {
 				name: "detail"
@@ -31,6 +33,8 @@ Window {
 				PropertyChanges { target: detailLoader; focus: true }
 				PropertyChanges { target: back; opacity: 1 }
 				PropertyChanges { target: backButton; enabled: true }
+				PropertyChanges { target: info; opacity: 1 }
+				PropertyChanges { target: infoButton; enabled: true }
 			}
 		]
 
@@ -90,6 +94,27 @@ Window {
 		opacity: 0
 		MouseArea {
 			id: backButton
+			anchors.fill: parent
+			acceptedButtons: Qt.LeftButton
+			enabled: false
+			onClicked: {
+				view.state = "list";
+			}
+		}
+	}
+
+	Image {
+		id: info
+		source: "../images/info.png"
+		fillMode: Image.PreserveAspectFit
+		width: parent.width / 10
+		height: parent.width / 10
+		anchors.right: parent.right
+		anchors.top: parent.top
+		anchors.margins: parent.height / 20
+		opacity: 0
+		MouseArea {
+			id: infoButton
 			anchors.fill: parent
 			acceptedButtons: Qt.LeftButton
 			enabled: false
