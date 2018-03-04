@@ -122,7 +122,7 @@ Item {
 		Rectangle {
 			anchors.fill: parent
 			anchors.margins: -1
-			color: "#10000000"
+			color: "#40000000"
 			border.width: 1
 			border.color: "#20ffffff"
 		}
@@ -143,7 +143,7 @@ Item {
 					anchors.left: parent.left
 					anchors.right: parent.right
 					font.bold: true
-					font.pixelSize: 20
+					font.pointSize: 18
 					color: "white"
 					text: "About app"
 					horizontalAlignment: Text.AlignHCenter
@@ -166,6 +166,14 @@ Item {
 					anchors.rightMargin: -16
 					color: "#20ffffff"
 					height: 1
+				}
+
+				InfoText {
+					text: "Welcome to <i>Weather demo</i>. This application is port of <a href=\"https://github.com/Bluebugs/freebox-elixir\">freebox-elixir</a> to Qt 5."
+				}
+
+				InfoText {
+					text: "This software is open source. Source code is distributed under MIT license. Images are from freebox-elixir project (distributed under GPL 2/3 license)."
 				}
 			}
 		}
