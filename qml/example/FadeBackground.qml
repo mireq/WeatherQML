@@ -14,6 +14,25 @@ Item {
 		}
 	}
 
+	states: [
+		State {
+			name: ""
+			PropertyChanges { target: panelTransform; x: infoPanel.width }
+			PropertyChanges { target: blur; x: -infoPanel.width }
+		},
+		State {
+			name: "info"
+			PropertyChanges { target: panelTransform; x: 0 }
+			PropertyChanges { target: blur; x: 0 }
+		}
+	]
+
+	transitions: [
+		Transition {
+			NumberAnimation { properties: "x"; easing.type: Easing.InOutCubic; duration: 400 }
+		}
+	]
+
 	Item {
 		anchors.fill: parent
 		id: content
@@ -66,6 +85,7 @@ Item {
 			anchors.fill: parent
 			acceptedButtons: Qt.LeftButton
 			onClicked: {
+				root.state = 'info';
 			}
 		}
 	}
@@ -76,6 +96,7 @@ Item {
 		anchors.right: parent.right
 		anchors.bottom: parent.bottom
 		width: Math.max(400, parent.width / 4)
+		transform: Translate { id: panelTransform; x: infoPanel.width }
 		ShaderEffectSource {
 			id: blurSource
 			width: parent.width
@@ -83,10 +104,19 @@ Item {
 			sourceItem: content
 			sourceRect: Qt.rect(content.width - infoPanel.width, 0, infoPanel.width, infoPanel.height)
 		}
-		FastBlur {
+
+		Item {
 			anchors.fill: parent
-			source: blurSource
-			radius: 32
+			clip: true
+			FastBlur {
+				id: blur
+				x: -infoPanel.width
+				y: 0
+				width: parent.width
+				height: parent.height
+				source: blurSource
+				radius: 32
+			}
 		}
 
 		Rectangle {

@@ -8,6 +8,16 @@ Window {
 	height: 480
 	title: qsTr("Weather")
 
+	function back() {
+		var item = detailLoader.item;
+		if (!item || item.state === "") {
+			view.state = "list";
+		}
+		else {
+			item.state = "";
+		}
+	}
+
 	ConditionModel {
 		id: conditionModel
 	}
@@ -52,6 +62,7 @@ Window {
 
 			onActivated: {
 				view.state = "detail";
+				detailLoader.source = "";
 				detailLoader.source = component + ".qml";
 			}
 		}
@@ -64,7 +75,7 @@ Window {
 				id: detailLoader
 				anchors.fill: parent
 				Keys.onEscapePressed: {
-					view.state = "list";
+					window.back();
 				}
 			}
 		}
@@ -94,7 +105,7 @@ Window {
 			acceptedButtons: Qt.LeftButton
 			enabled: false
 			onClicked: {
-				view.state = "list";
+				window.back();
 			}
 		}
 	}
