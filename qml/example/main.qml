@@ -82,8 +82,8 @@ Window {
 		id: back
 		source: "../images/back.png"
 		fillMode: Image.PreserveAspectFit
-		width: parent.width / 10
-		height: parent.width / 10
+		width: parent.width / 16
+		height: parent.width / 16
 		anchors.left: parent.left
 		anchors.top: parent.top
 		anchors.margins: parent.height / 20
