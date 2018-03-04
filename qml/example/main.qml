@@ -22,17 +22,22 @@ Window {
 				name: "list"
 				PropertyChanges { target: transform; x: 0 }
 				PropertyChanges { target: listView; focus: true }
+				PropertyChanges { target: back; opacity: 0 }
+				PropertyChanges { target: backButton; enabled: false }
 			},
 			State {
 				name: "detail"
 				PropertyChanges { target: transform; x: -view.width }
 				PropertyChanges { target: detailLoader; focus: true }
+				PropertyChanges { target: back; opacity: 1 }
+				PropertyChanges { target: backButton; enabled: true }
 			}
 		]
 
 		transitions: [
 			Transition {
 				NumberAnimation { properties: "x"; easing.type: Easing.InOutCubic; duration: 400 }
+				NumberAnimation { properties: "opacity"; easing.type: Easing.InOutCubic; duration: 300 }
 			}
 		]
 
@@ -69,6 +74,27 @@ Window {
 			Rectangle {
 				anchors.fill: parent
 				transform: Translate { x: parent.width }
+			}
+		}
+	}
+
+	Image {
+		id: back
+		source: "../images/back.png"
+		fillMode: Image.PreserveAspectFit
+		width: parent.width / 10
+		height: parent.width / 10
+		anchors.left: parent.left
+		anchors.top: parent.top
+		anchors.margins: parent.height / 20
+		opacity: 0
+		MouseArea {
+			id: backButton
+			anchors.fill: parent
+			acceptedButtons: Qt.LeftButton
+			enabled: false
+			onClicked: {
+				view.state = "list";
 			}
 		}
 	}
