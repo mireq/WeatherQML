@@ -8,6 +8,7 @@ Item {
 	property string background: isDay ? 'day_clear' : 'night_clear'
 	property bool initialized: false
 	property alias backgroundVisible: background.visible
+	property int visibleItems: 1
 
 	width: 480
 	height: 480
@@ -45,7 +46,7 @@ Item {
 	Binding {
 		target: forecast
 		property: 'state'
-		value: model.index === list.currentIndex ? "down" : "up"
+		value: (model.index < list.currentIndex + forecast.visibleItems && model.index >= list.currentIndex) ? "down" : "up"
 		when: forecast.initialized
 	}
 

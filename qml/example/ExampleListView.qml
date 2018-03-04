@@ -14,6 +14,10 @@ Item {
 			name: "Conditions with fade background"
 			component: "FadeBackground"
 		}
+		ListElement {
+			name: "Multiple columns"
+			component: "MultiColumnsList"
+		}
 	}
 
 	Component {
