@@ -30,7 +30,6 @@
         <file>conditions/Windy.qml</file>
         <file>example/ConditionModel.qml</file>
         <file>example/main.qml</file>
-        <file>example/MainView.qml</file>
         <file>images/bg_day_clear.png</file>
         <file>images/bg_day_heavyrain.png</file>
         <file>images/bg_day_rain.png</file>
@@ -105,5 +104,18 @@
         <file>components/dummydata/parent.qml</file>
         <file>conditions/dummydata/parent.qml</file>
         <file>conditions/dummydata/model.qml</file>
+        <file>components/CrossFade.qml</file>
+        <file>components/TextLayer.qml</file>
+        <file>example/ConditionBackgroundDelegate.qml</file>
+        <file>example/ConditionDelegate.qml</file>
+        <file>example/ExampleListView.qml</file>
+        <file>example/FadeBackground.qml</file>
+        <file>example/InfoText.qml</file>
+        <file>example/MultiColumnsList.qml</file>
+        <file>example/SimpleWeatherList.qml</file>
+        <file>images/back.png</file>
+        <file>images/back.svg</file>
+        <file>images/info.png</file>
+        <file>images/info.svg</file>
     </qresource>
 </RCC>
